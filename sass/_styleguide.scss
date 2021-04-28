@@ -1,0 +1,110 @@
+@use '_mixins' as mixin;
+@use '_varibles' as *;
+$hmarge: 16px;
+$pmarge: 1em;
+body {
+	font-size: 17px;
+	font-weight: 400;
+	color: $text;
+	line-height: $pline-height;
+	font-family: $nunito;
+}
+
+p {
+	font-size: 17px;
+	font-weight: $fwreg;
+	color: $text;
+	line-height: $pline-height;
+	margin-bottom: $pmarge;
+}
+
+a {
+	font-weight: $fwbold;
+	color: $brand;
+	text-decoration: none;
+	&:hover {
+					text-decoration:underline;
+	}
+}
+ul {
+	margin-left: 1em;
+	margin-bottom: 1em;
+	li {
+		list-style-type: disc;
+		list-style-position: inside;
+		font-size: 17px;
+		font-weight: 400;
+		padding-bottom: .3em;
+		&::marker {
+		  color: $brand;
+		}
+	}
+}
+ol {
+	margin-left: 1em;
+	margin-bottom: 1em;
+	li {
+		font-size: 17px;
+		font-weight: 400;
+		list-style-type: decimal;
+		list-style-position: inside;
+		&::marker {
+		  color: $brand;
+		  font-weight: $fwsemi;
+		}
+	}
+}
+
+
+/* BUTTONS */
+.wp-block-button {
+	margin-bottom: 0!important;
+}
+.btn,
+.wp-block-button__link {
+	box-shadow: none;
+	background-color: $brand;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 0;
+	font-weight: $fwreg;
+	border:1px solid 	rgba(255, 255, 255, .25);
+	min-width: 150px;
+	text-align: center;
+	padding: 1em 1em;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 1;
+	transition: all .3s ease-in-out;
+	margin-bottom: 1em;
+	&:hover {
+					border:1px solid 	rgba(255, 255, 255, .25);
+					background-color: $secondary;
+					color:$base;
+					transition: all .3s ease-in-out;
+					text-decoration: none;
+	}
+}
+
+
+h1 {
+	font-weight: $fwsemi;
+	font-size: 50px;
+	line-height: 1.25;
+	margin-bottom: $hmarge;
+}
+h2 {
+	font-weight: $fwsemi;
+	font-size: 32px;
+	line-height: 1;
+	line-height: 1.25;
+	margin-bottom: $hmarge;
+}
+h3 {
+	font-weight: $fwsemi;
+	font-size: 26px;
+	line-height: 1;
+	line-height: 1.25;
+	margin-bottom: $hmarge;
+}

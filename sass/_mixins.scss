@@ -1,0 +1,92 @@
+@function puc($val, $font-size) {
+  @return ( $val * $font-size) / 1000  * 1px;
+}
+
+@function luh($font-size,$leading) {
+  @return $leading / $font-size;
+}
+
+// Adds letter spacing to match photoshop tracking
+@mixin tracking($ps-tracking){
+    letter-spacing: #{ $ps-tracking / 1000 }em;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin min ($mw) {
+  @media (min-width: $mw) { @content; }
+}
+
+@mixin max ($maxw) {
+  @media screen and (max-width: $maxw) { @content; }
+}
+
+@mixin resetfont () {
+    line-height: 1em;
+    margin: 0;
+}
+
+@mixin to640 {
+  @media (min-width: 320px) and (max-width: 640px) { @content; }
+}
+@mixin to980 {
+  @media (min-width: 320px) and (max-width: 980px) { @content; }
+}
+
+@mixin breakpoint($class) {
+
+  @if $class == xs {
+    @media screen and (max-width: 767px) { @content; }
+  }
+  @else if $class == xxs {
+    @media screen and (max-width: 374px) { @content; }
+  }
+
+  @else if $class == ipad {
+    @media screen and (min-width: 768px) and (max-width: 980px) { @content; }
+  }
+    @else if $class == pro {
+    @media screen and (min-width: 768px) and (max-width: 1024px) { @content; }
+  }
+
+  @else if $class == md {
+    @media screen and (min-width: 992px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media screen and (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xxs, xs, ipad, md, lg, pro";
+  }
+}
+
+
+@mixin querypoint($min: 0, $max: 0) {
+  $type: type-of($min);
+   @if $type == string {
+
+   }
+  @else if $type == number {
+    $query: "all" !default;
+    @if $min != 0 and $max != 0 {
+      $query: "(min-width: #{$min}) and (max-width: #{$max})";
+    }
+    @else if $min != 0 and $max == 0 {
+      $query: "(min-width: #{$min})";
+    }
+    @else if $min == 0 and $max != 0 {
+      $query: "(max-width: #{$max})";
+    }
+    @media #{$query} {
+      @content;
+    }
+  }
+}
