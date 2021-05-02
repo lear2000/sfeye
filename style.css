@@ -141,7 +141,8 @@ ol li::marker {
 
 .btn,
 .wp-block-button__link {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: #007FCD;
   color: #fff;
   text-decoration: none;
@@ -155,6 +156,7 @@ ol li::marker {
   text-transform: uppercase;
   font-size: 13px;
   line-height: 1;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-bottom: 1em;
 }
@@ -163,6 +165,7 @@ ol li::marker {
   border: 1px solid rgba(255, 255, 255, 0.25);
   background-color: #E48212;
   color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
 }
@@ -190,17 +193,58 @@ h3 {
   margin-bottom: 16px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-semibold {
+  font-weight: 500;
+}
+
+body .mb-none {
+  margin-bottom: 0;
+}
+
+body .mt-none {
+  margin-top: 0;
+}
+
+body .pb-none {
+  padding-bottom: 0;
+}
+
+body .pt-none {
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 960px) {
+  .layout-container {
+    max-width: 1630px;
+    margin: 0 auto;
+  }
+}
+.color-white {
+  color: #ffffff;
+}
+
 .wp-block-pullquote:not(.is-style-solid-color),
 .wp-block-pullquote {
   padding: 3em 9em;
   color: #ffffff;
   background-color: #F5F5F5;
   margin-bottom: 1em;
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   min-height: 394px;
 }
@@ -234,11 +278,14 @@ h3 {
   position: relative;
   z-index: 0;
   min-height: 360px;
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
 }
 .quotebg::after {
@@ -273,11 +320,51 @@ h3 {
   margin: 0 auto;
 }
 
+.block-hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.block-hero-content {
+  padding-top: 130px;
+  padding-bottom: 75px;
+}
+.block-hero .is-heading {
+  font-size: 23px;
+  line-height: 1.5;
+}
+.block-hero .is-heading span {
+  display: block;
+  font-weight: 400;
+}
+.block-hero-text {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-style: italic;
+}
+.block-hero-text * {
+  color: #ffffff;
+  font-size: 14px;
+}
+.block-hero-btn {
+  font-size: 13px;
+  line-height: normal;
+  margin-top: 45px;
+}
+.block-hero-btn .btn {
+  border: none;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+@media only screen and (min-width: 767px) {
+  .block-hero {
+    display: block;
+  }
+}
 /*
 Theme Name: CVP THEME
 Description: A custom theme built by the FS.
 Author: FS
 Version: 1.0
 */
-
-/*# sourceMappingURL=style.css.map */

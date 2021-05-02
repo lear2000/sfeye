@@ -1,0 +1,55 @@
+@use "../variables" as *;
+
+.block-hero{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&-content{
+		padding-top: 130px;
+		padding-bottom: 75px;
+	}
+
+	.is-heading{
+		font-size: 23px;
+		line-height: 1.5;
+
+		span{
+			display: block;
+			font-weight: $fwreg;
+		}
+	}
+
+	&-text{
+		padding-left: 40px;
+		padding-right: 40px;
+		font-style: italic;
+
+		* {
+			color: $base;
+			font-size: 14px;;
+		}
+	}
+	 
+
+	&-btn{
+		font-size: 13px;
+		line-height: normal;
+		margin-top: 45px;
+
+		.btn{
+			border: none;
+			font-weight: $fwsemi;
+			padding:15px 20px;
+		}
+	}
+}
+
+// starts at table
+@media only screen and (min-width: 767px) {
+	
+	.block-hero{
+		display: block;
+	}
+
+}

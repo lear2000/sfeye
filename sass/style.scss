@@ -5,6 +5,12 @@ Author: FS
 Version: 1.0
 */
 @use '_reset';
-@use '_varibles';
+@use '_variables';
 @use '_styleguide';
+@use '_helpers';
 @use '_quotebg';
+
+
+// Components
+
+@use 'blocks/_hero';
