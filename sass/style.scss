@@ -4,6 +4,7 @@ Description: A custom theme built by the FS.
 Author: FS
 Version: 1.0
 */
+
 @use '_reset';
 @use '_variables';
 @use '_styleguide';
@@ -11,6 +12,13 @@ Version: 1.0
 @use '_quotebg';
 
 
+// plugins
+
+@use "plugins/_slick";
+
 // Components
 
-@use 'blocks/_hero';
+@use 'blocks/_block-hero';
+@use 'blocks/_block-surgery-types';
+@use 'blocks/_block-1-2';
+@use 'blocks/_block-1-2-home';

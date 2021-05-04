@@ -10,7 +10,17 @@
 
 
 	<!-- storefront -->
-	<?php get_template_part( 'tmpl/blocks/hero' ); ?>
+	<?php get_template_part( 'tmpl/blocks/block' , 'hero' ); ?>
+	
+	<?php get_template_part( 'tmpl/blocks/block' , 'surgery-types' ); ?>
+
+	<?php get_template_part( 'tmpl/blocks/block' , '1-2-vision' ); ?>
+	
+	<?php get_template_part( 'tmpl/blocks/block' , '1-2-cataract' ); ?>
+
+	<?php get_template_part( 'tmpl/blocks/block' , '1-2-ilux' ); ?>
+
+	<?php get_template_part( 'tmpl/blocks/block' , '1-2-crosslink' ); ?>
 	<!--  -->
 
 	<?php endwhile; ?>

@@ -1,11 +1,17 @@
 /* COLORS */
+
 $brand: #007FCD;
 $secondary: #E48212;
 $third: #60A76D;
+$fourth: #C9A718;
+
 $background: #F5F5F5;
 $base: #ffffff;
 $text: #686868;
 
+$white: $base;
+$gray-1: $background;
+$gray-2: $text;
 
 $pline-height: 1.6;
 
@@ -17,6 +23,7 @@ $fwbold: 900;
 
 
 /* nunito-regular - latin */
+
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -67,6 +74,6 @@ $nunito: 'Nunito', sans-serif;
 
 //container
 
- $max-width-container: 1630px;
+ $max-width-container: 1360px;
 
 
