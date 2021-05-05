@@ -25,6 +25,14 @@
       "oAP" : "\/404.php",
       "oF" : 0
     },
+    "\/acf-json\/group_60931119b4383.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_60931119b4383-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/archive.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -557,6 +565,16 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/images\/blank.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/blank.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/close-nav.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -802,6 +820,20 @@
       "oA" : 0,
       "oAP" : "\/page.php",
       "oF" : 0
+    },
+    "\/sass\/_blog.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_blog.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/sass\/_footer.scss" : {
       "aP" : 1,

@@ -211,6 +211,10 @@ main .container {
   padding: 0 4vw;
 }
 
+p strong {
+  font-weight: 600;
+}
+
 @media screen and (min-width: 1025px) {
   .navbar {
     display: block;
@@ -1188,6 +1192,29 @@ footer p img {
 }
 footer p:last-of-type {
   margin-bottom: 0;
+}
+
+.postitem {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #E1E5EA;
+}
+.postitem .pitemimg {
+  min-width: 20%;
+  max-width: 50%;
+  padding-right: 83px;
+}
+.postitem .pitemimg img {
+  max-width: 100%;
+  height: auto;
+}
+.postitem .btn {
+  margin-bottom: 0;
+}
+.postitem .pcontent {
+  width: 50%;
 }
 
 /*
