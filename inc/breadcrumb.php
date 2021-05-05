@@ -6,7 +6,7 @@ function fs_breadcrumb() {
 
 			$html = '
 						<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a href="' . get_bloginfo( 'url' ) . '" itemprop="item" itemtype="http://schema.org/WebPage"><span itemprop="name"><i class="far fa-home"></i>Home</span></a> <span>|</span>
+						<a href="' . get_bloginfo( 'url' ) . '" itemprop="item" itemtype="http://schema.org/WebPage"><span itemprop="name"><i class="far fa-home"></i>Home</span></a> <span>/</span>
 						 <meta itemprop="position" content="1" />
 						</span>';
 
@@ -17,7 +17,7 @@ function fs_breadcrumb() {
 			$cnt++;
 
 			$html .= '<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-						<a href="' . get_the_permalink($a) . '" itemprop="item" itemtype="http://schema.org/WebPage"><span itemprop="name">' . get_the_title($a) . '</span></a> |
+						<a href="' . get_the_permalink($a) . '" itemprop="item" itemtype="http://schema.org/WebPage"><span itemprop="name">' . get_the_title($a) . '</span></a> /
 						<meta itemprop="position" content="'.$cnt.'" />
 						 </span>
 						';

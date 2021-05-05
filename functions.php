@@ -1,6 +1,6 @@
 <?php
 // INC
-// include 'inc/breadcrumb.php';
+ include 'inc/breadcrumb.php';
 // include 'nofollow/nofollow.php';
 // include 'inc/media-uploader.php';
 // include 'inc/acfsrcset.php';
@@ -34,7 +34,7 @@ function wpdocs_theme_name_scripts() {
 
     // REMOVE JQUERY
     wp_deregister_script( 'jquery' );
-    wp_register_script('jquery', 'https://code.jquery.com/jquery-3.6.0.slim.min.js', false, '2', true);
+    wp_register_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', false, '2', true);
     // wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/scripts.js', array('jquery'), '1.0.0', true );
 

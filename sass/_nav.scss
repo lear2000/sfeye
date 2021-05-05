@@ -193,6 +193,9 @@ nav .menu-item-has-children {
 	display: flex;
 	align-items: center;
 	padding:1em 2em;
+	@media screen and (max-width: 331px) {
+	  padding:1em;
+	}
 }
 .close-nav {
 	display: block;
@@ -254,6 +257,7 @@ nav {
 		left: 0;
 		width: 100%;
 		animation: fade-in 0.5s cubic-bezier(0.860, 0.000, 0.070, 1.000) forwards;
+	  z-index: 10;
 	}
 }
 

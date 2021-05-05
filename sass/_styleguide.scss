@@ -111,3 +111,18 @@ h3 {
 	line-height: 1.25;
 	margin-bottom: $hmarge;
 }
+
+main {
+	&.secondary-bg {
+		background-color: #F5F5F5;
+	}
+	padding-bottom: 4em;
+}
+
+
+main .container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1366px;
+	padding: 0 4vw;
+}
