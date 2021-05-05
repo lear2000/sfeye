@@ -120,7 +120,35 @@ return $rgb; // returns an array with the rgb values
 
 
 
+/* EXTEND SUBNAV
+******************************************/
 
+class submenuWrap extends Walker_Nav_Menu {
+    function start_lvl( &$output, $depth = 0, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "\n$indent<ul class='sub-menu depth-".$depth."'>\n";
+    }
+    function end_lvl( &$output, $depth = 0, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "$indent</ul>\n";
+    }
+}
+
+/*
+*
+* Walker for the main menu
+*
+*/
+function add_arrow( $output, $item, $depth, $args ){
+// //Only add class to 'top level' items on the 'primary' menu.
+if('Main Menu' == $args->menu && $depth === 0 or $args->menu && $depth === 1 ){
+     if (in_array("menu-item-has-children", $item->classes)) {
+         $output .='<div class="nav-plus"><span></span><span></span></div>';
+    }
+}
+    return $output;
+}
+add_filter( 'walker_nav_menu_start_el', 'add_arrow',10,4);
 
 
 

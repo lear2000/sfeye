@@ -5,7 +5,8 @@
 			<?php
 			wp_nav_menu( array(
 			    'menu' => 'Header Menu',
-			    'container' => ''
+			    'container' => '',
+			    'walker' => new submenuWrap()
 			) );
 			 ?>
 		</nav>

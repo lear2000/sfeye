@@ -1,4 +1,8 @@
 @use '_varibles' as *;
+$navhover:#016AAA;
+@media screen and (min-width: 1024px) {
+
+
 .navbar {
 	display: block;
 	background-color: $brand;
@@ -14,6 +18,7 @@
 	display: flex;
 	height: 100%;
 	align-items: center;
+	& > * {height: 100%;}
 	& > a {
 		display: flex;
 		justify-content: center;
@@ -58,8 +63,14 @@ nav {
 			display: flex;
 			align-items: center;
 			padding-right: 1em;
-			&:last-of-type {
-				padding-right: 0;
+			padding-left: 1em;
+			transition: all .3s ease-in-out;
+
+			@media screen and (min-width: 1024px) {
+					  &:hover {
+					  	background-color: $navhover;
+					  	transition: all .3s ease-in-out;
+					  }
 			}
 		}
 	}
@@ -67,5 +78,98 @@ nav {
 		color: #fff;
 		font-size: 14px;
 		font-weight: $fwsemi;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+						text-decoration: none;
+		}
 	}
 }
+
+nav .menu-item-has-children {
+			position: relative;
+			.sub-menu {
+				background-color: $navhover;
+				min-width: 320px;
+				transition: all .3s ease-in-out;
+				width: 100%;
+				li {
+					display: flex;
+					align-items: center;
+					text-align: left;
+					line-height: 1.2;
+					background-color: $navhover;
+					height: 90%;
+							&:hover {
+										background-color: #02619B;
+										}
+
+				}
+				&.depth-0 {
+					display: none;
+					opacity: 0;
+					a {
+						padding:initial;
+						display: flex;
+						width: 100%;
+						white-space: nowrap;
+						line-height: 1;
+						font-size: 14px;
+					}
+				}
+				&.depth-1 {
+					display: none;
+				}
+			}
+		}
+
+		nav .menu-item-has-children:hover {
+			.sub-menu.depth-0 {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				opacity: 1;
+				display: block;
+				z-index: 2;
+				transition: all .3s ease-in-out;
+			}
+		}
+
+		nav 	.sub-menu.depth-0 {
+			.menu-item-has-children {
+				position: relative;
+					&:hover {
+										.sub-menu.depth-1 {
+											width: 100%;
+											min-width: 250px;
+											position: absolute;
+											top: 0;
+											left: 100%;
+											opacity: 1;
+											display: block;
+											z-index: 2;
+											transition: all .3s ease-in-out;
+
+										}
+									}
+
+			}
+		}
+		.nav-plus::after {
+			content: url(images/nav-arrow-right.svg);
+			width: 6px;
+			height: 6px;
+			display: block;
+			height: 100%;
+		}
+		.sub-menu.depth-1 {
+			li {
+				height: 100%;
+			}
+		}
+
+}
+
+/* mobile nav */
