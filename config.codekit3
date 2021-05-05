@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/.gitattributes" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitattributes",
+      "oF" : 0
+    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -527,6 +535,26 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/images\/home-icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/home-icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/icon-location.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/icon-location.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/quote-white.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -559,6 +587,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/images\/tel-icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/tel-icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/inc\/acf-functions.php" : {
       "cB" : 0,
@@ -633,6 +671,20 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/_mixins.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/sass\/_nav.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_nav.css",
       "oF" : 0,
       "oS" : 1,
       "pg" : 0,
@@ -747,6 +799,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/style.css.map",
+      "oF" : 0
+    },
+    "\/tmpl\/header-nav.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/header-nav.php",
       "oF" : 0
     },
     "\/tmpl\/quote-background.php" : {

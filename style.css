@@ -190,6 +190,87 @@ h3 {
   margin-bottom: 16px;
 }
 
+.navbar {
+  display: block;
+  background-color: #007FCD;
+  color: #fff;
+  height: 57px;
+  max-width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.navleft {
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.navleft > a {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-right: 2em;
+}
+.navleft > a span {
+  display: none;
+}
+
+.navright {
+  margin-left: auto;
+}
+.navright a span {
+  display: none;
+}
+.navright .location {
+  padding-right: 1em;
+}
+.navright .tel {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+}
+.navright .tel img {
+  padding-right: 1em;
+}
+
+nav ul {
+  display: -webkit-flex;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  height: 100%;
+  -webkit-align-items: center;
+          align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-right: 1em;
+}
+nav ul li:last-of-type {
+  padding-right: 0;
+}
+nav a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .wp-block-pullquote:not(.is-style-solid-color),
 .wp-block-pullquote {
   padding: 3em 9em;

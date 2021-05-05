@@ -118,15 +118,7 @@ return $rgb; // returns an array with the rgb values
 }
 
 
-// STANDARD BUTTON shortcode
-function orange_button( $atts , $content = null) {
-  $atts = shortcode_atts( array(
-  'href' => '#'
-  ), $atts );
 
-  return '<a class="standardbtn button" href="' . esc_attr($atts['href']) . '">' . $content . '</a>';
-}
-add_shortcode( 'standardbtn','orange_button' );
 
 
 
@@ -157,36 +149,6 @@ add_shortcode( 'standardbtn','orange_button' );
 
 
 
-
-
-// REVIEW STARS
-function stars($stars){
-  switch ($stars) {
-    case '1':
-      echo "<span>&#9733;</span>";
-      break;
-    case '2':
-      echo "<span>&#9733;</span><span>&#9733;</span>";
-      break;
-
-    case '3':
-      echo "<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>";
-      break;
-
-    case '4':
-      echo "<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>";
-      break;
-
-    case '5':
-      echo "<span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>";
-      break;
-
-    default:
-      # code...
-      break;
-  }
-
-}
 
 
 
