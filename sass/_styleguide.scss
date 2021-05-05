@@ -8,6 +8,9 @@ body {
 	color: $text;
 	line-height: $pline-height;
 	font-family: $nunito;
+	&.is-hidden {
+		overflow: hidden;
+	}
 }
 
 p {

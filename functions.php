@@ -33,10 +33,10 @@ function wpdocs_theme_name_scripts() {
     // }
 
     // REMOVE JQUERY
-   // wp_deregister_script( 'jquery' );
-    // wp_register_script('jquery', get_template_directory_uri() . '/js/jquery.js', false, '2', true);
+    wp_deregister_script( 'jquery' );
+    wp_register_script('jquery', 'https://code.jquery.com/jquery-3.6.0.slim.min.js', false, '2', true);
     // wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array('jquery'), '1.0.0', true );
-    // wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/scripts.js', array('jquery'), '1.0.0', true );
 
 
 }
@@ -141,7 +141,7 @@ class submenuWrap extends Walker_Nav_Menu {
 */
 function add_arrow( $output, $item, $depth, $args ){
 // //Only add class to 'top level' items on the 'primary' menu.
-if('Main Menu' == $args->menu && $depth === 0 or $args->menu && $depth === 1 ){
+if('Header Menu' == $args->menu && $depth === 0 or $args->menu && $depth === 1 ){
      if (in_array("menu-item-has-children", $item->classes)) {
          $output .='<div class="nav-plus"><span></span><span></span></div>';
     }

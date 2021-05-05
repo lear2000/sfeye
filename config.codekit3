@@ -33,6 +33,17 @@
       "oAP" : "\/archive.php",
       "oF" : 0
     },
+    "\/assets\/scripts.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/scripts-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/category.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -535,6 +546,16 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/images\/close-nav.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/close-nav.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/home-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -550,6 +571,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/images\/icon-location.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/mobile-logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/mobile-logo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
