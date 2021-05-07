@@ -25,12 +25,62 @@
 	<section>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article class="container">
+			<div class="swrap">
+			<?php
+				$post_or_article = get_field('post_or_article');
+				$featured_image = get_field( 'featured_image' );
+				if ($post_or_article == "article"): ?>
+					<?php
+
+							$article_title = get_field( 'article_title' );
+							$publication =  get_field( 'publication' );
+					 ?>
+					<?php if ( $featured_image ) : ?>
+						<div class="sfeat">
+						 <img width="<?php echo  $featured_image['width']; ?>" height="<?php echo esc_url( $featured_image['height'] ); ?>" src="<?php echo esc_url( $featured_image['url'] ); ?>" alt="<?php echo $featured_image['alt']; ?>" />
+						</div>
+					<?php endif; ?>
+					<div class="stitle">
+						<h2><?php the_title(); ?></h2>
+						<?php if ($article_title): ?>
+						<p><strong>Article Title:</strong> <?php echo $article_title; ?></p>
+						<?php endif ?>
+						<?php if ($publication): ?>
+							<p><strong>Publication:</strong> <?php echo $publication; ?></p>
+						<?php endif ?>
+						<?php if (get_the_excerpt()): ?>
+							<?php the_excerpt(); ?>
+						<?php endif ?>
+					</div>
+			  <?php endif; //article ?>
+			  <?php if ($post_or_article == "post"): ?>
+
+			  	<?php if ( get_field( 'hide_featured_image_on_single_post_page' ) != 1 ) : ?>
+			  		<div class="sfeat">
+			  		 <img width="<?php echo  $featured_image['width']; ?>" height="<?php echo esc_url( $featured_image['height'] ); ?>" src="<?php echo esc_url( $featured_image['url'] ); ?>" alt="<?php echo $featured_image['alt']; ?>" />
+			  		</div>
+			  		<div class="stitle ">
+			  			<h2><?php the_title(); ?></h2>
+			  			<?php if (get_the_excerpt()): ?>
+			  				<?php the_excerpt(); ?>
+			  			<?php endif ?>
+			  		</div>
+			  	<?php else: ?>
+			  	<div class="stitle fullh">
+			  		<h2><?php the_title(); ?></h2>
+			  	</div>
+			  <?php endif; ?>
+
+			  <?php endif ?>
+			 </div>
+				<?php ///main content ?>
 				<?php the_content(); ?>
+				<nav class="prevnext">
+					<?php previous_post_link( '%link', 'Previous'); ?>
+					<?php next_post_link( '%link', 'Next'); ?>
+				</nav>
 		</article>
-		<nav>
-			<?php previous_post_link( '%link', 'Previous'); ?>
-			<?php next_post_link( '%link', 'Next'); ?>
-		</nav>
+
 	<?php endwhile; ?>
 </section>
 <?php endif; ?>

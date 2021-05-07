@@ -34,7 +34,7 @@
 							if ($post_or_article == 'post' || $post_or_article == '') {
 							 echo '<p>'.wp_trim_words( get_the_content(), 40, ' ...' ).'</p>';
 							} else {
-								the_content();
+								the_excerpt();
 							}
 					 ?>
 

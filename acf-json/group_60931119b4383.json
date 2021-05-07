@@ -102,6 +102,25 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_6095591d78919",
+            "label": "Hide Featured Image On Single Post Page",
+            "name": "hide_featured_image_on_single_post_page",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -121,5 +140,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1620254392
+    "modified": 1620400439
 }

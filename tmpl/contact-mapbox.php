@@ -1,4 +1,11 @@
-<section class="mapbox">
+<?php
+//query var from footerphp
+$mapfooterform = $args['mapfooterform'];
+if ($mapfooterform) {
+	$mapfooterform = "map-footer-form";
+}
+?>
+<section class="mapbox <?php echo $mapfooterform; ?>">
 	<div class="container">
 		<div class="mapwrap">
 			<div class="mapimg"></div>

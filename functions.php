@@ -9,6 +9,28 @@ include 'inc/acf-functions.php';
 
 
 
+//prev next classes
+add_filter('next_post_link', 'post_link_attributes');
+add_filter('previous_post_link', 'post_link_attributes');
+
+function post_link_attributes($output) {
+    $code = 'class="btn secondary"';
+    return str_replace('<a href=', '<a '.$code.' href=', $output);
+}
+
+add_filter('next_posts_link_attributes', 'set_next_id');
+add_filter('previous_posts_link_attributes', 'set_previous_id');
+
+function set_next_id() {
+    return 'class="btn secondary next"';
+}
+
+function set_previous_id() {
+    return 'class="btn secondary prev"';
+}
+
+
+
 //full sized images
 add_filter('jpeg_quality', function($arg){return 100;});
 

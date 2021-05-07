@@ -4,10 +4,21 @@
 	padding-top: 80px;
 	padding-bottom: 42px;
 	border-bottom: 1px solid #E1E5EA;
+	@media screen and (max-width: 767px) {
+	  flex-wrap: wrap;
+	  padding-top: 2em;
+	}
 	.pitemimg {
 		min-width: 20%;
 		max-width: 50%;
 		padding-right: 83px;
+		@media screen and (max-width: 767px) {
+		  padding:0;
+		  margin: 0 auto;
+		  min-width: 100%;
+		  max-width: 100%;
+		  margin-bottom: 1em;
+		}
 		img {
 			max-width: 100%;
 			height: auto;
@@ -18,13 +29,21 @@
 	}
 	.pcontent {
 		width: 50%;
+		@media screen and (max-width: 767px) {
+		  width: 100%;
+		}
 	}
 }
 .upbnav {
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	@media screen and (max-width: 767px) {
+	  padding-top: 1em;
+	  padding-bottom: 1em;
+	}
 	.container {
 		display: flex;
+
 	}
 	.btn {
 		min-width: 187px;
@@ -33,11 +52,23 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media screen and (max-width: 767px) {
+		  margin-bottom: 1em;
+		  min-width: initial;
+		  font-size: .5em;
+		  width: 100%;
+		}
 		&:nth-child(2) {
 			margin-left: auto;
+			@media screen and (max-width: 767px) {
+			  margin-left: 0;
+			}
 		}
 		&:nth-child(3) {
 			margin-left: 2em;
+			@media screen and (max-width: 767px) {
+			  margin-left: 0;
+			}
 		}
 	}
 	.back-arrow {
@@ -79,6 +110,9 @@
 		padding-top: 1em;
 		padding-bottom: 1em;
 		text-decoration: none;
+		@media screen and (max-width: 767px) {
+		  font-size: 12px;
+		}
 	}
 	.arcats {
 			margin:0;
@@ -101,5 +135,54 @@
 				padding-bottom: .5em;
 			}
 		}
+	}
+}
+
+.swrap {
+	display: flex;
+	flex-direction: row;
+	@media screen and (max-width: 980px) {
+	  flex-wrap: wrap;
+	}
+	.sfeat {
+		width: 50%;
+		margin-right: 2em;
+		margin-bottom: 2em;
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+		}
+		@media screen and (max-width: 767px) {
+		  margin:0 auto;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.stitle {
+		width: 50%;
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+		}
+		h2 {
+			padding-bottom: .5em;
+			border-bottom: 1px solid #E1E5EA;
+			margin-bottom: 1em;
+		}
+
+	}
+	.fullh {
+		width: 100%;
+	}
+}
+
+nav.prevnext {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	.btn {
+		margin-bottom: 0;
 	}
 }
