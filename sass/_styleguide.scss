@@ -116,13 +116,15 @@ h3 {
 	line-height: 1;
 	line-height: 1.25;
 	margin-bottom: $hmarge;
+	@media screen and (max-width: 767px) {
+	  font-size: 18px;
+	}
 }
 
 main {
 	&.secondary-bg {
 		background-color: #F5F5F5;
 	}
-	padding-bottom: 4em;
 }
 
 
@@ -135,3 +137,26 @@ main .container {
 p strong {
 	font-weight: $fwsemi;
 }
+
+iframe {
+	max-width: 100%;
+}
+
+ul.bullet {
+	li {
+		list-style: none;
+		list-style-image: url(images/eye-bullet.svg);
+		&::before {
+			// content:"";
+			width: 8px;
+			height: 8px;
+			background-image: url(images/eye-bullet.svg);
+			background-size: contain;
+			display: inline-block;
+			margin-right: 1em;
+			vertical-align: middle;
+
+		}
+	}
+}
+

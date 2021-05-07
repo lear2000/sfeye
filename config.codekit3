@@ -49,6 +49,28 @@
       "oAP" : "\/archive.php",
       "oF" : 0
     },
+    "\/assets\/blocks-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/blocks-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/blocks.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/blocks-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/assets\/scripts-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -70,6 +92,16 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/assets\/trusted.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/trusted.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/category.php" : {
       "cB" : 0,
@@ -583,6 +615,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/bg-burst.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/bg-burst.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/blank.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -627,6 +669,32 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/images\/cross-linking-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 1513815,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/cross-linking-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/cta.jpg" : {
+      "ft" : 16384,
+      "iS" : 533752,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/cta.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/down-arrow.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -647,6 +715,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/eye-bullet.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/eye-bullet.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/Facebook.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -656,6 +734,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/images\/faq-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 1041394,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/faq-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/images\/footer-logo.svg" : {
       "ft" : 2097152,
@@ -695,6 +786,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/images\/icon-location.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/logo-watermark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/logo-watermark.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -842,6 +943,42 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/trusted.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/trusted.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/visianbox.jpg" : {
+      "ft" : 16384,
+      "iS" : 102041,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/visianbox.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/xlink.jpg" : {
+      "ft" : 16384,
+      "iS" : 270605,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/xlink.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/Yelp.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -892,6 +1029,14 @@
       "oAP" : "\/inc\/media-uploader.php",
       "oF" : 0
     },
+    "\/inc\/shortcode-sources.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/inc\/shortcode-sources.php",
+      "oF" : 0
+    },
     "\/inc\/speedup.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -916,6 +1061,34 @@
       "oAP" : "\/page.php",
       "oF" : 0
     },
+    "\/sass\/_bgburst.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_bgburst.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/sass\/_bgwtext.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_bgwtext.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/sass\/_blog.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -925,6 +1098,20 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/_blog.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/sass\/_cta.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_cta.css",
       "oF" : 0,
       "oS" : 1,
       "pg" : 0,
@@ -1000,6 +1187,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/sass\/_himghtxt.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_himghtxt.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/sass\/_mapbox.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1070,6 +1271,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/sass\/_sectionfaq.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_sectionfaq.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/sass\/_sectiontwotext.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1079,6 +1294,20 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/_sectiontwotext.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/sass\/_sources.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_sources.css",
       "oF" : 0,
       "oS" : 1,
       "pg" : 0,
@@ -1183,6 +1412,14 @@
       "oAP" : "\/tmpl\/contact-mapbox.php",
       "oF" : 0
     },
+    "\/tmpl\/footer-form.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/footer-form.php",
+      "oF" : 0
+    },
     "\/tmpl\/header-nav.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1205,6 +1442,54 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/tmpl\/quote-background.php",
+      "oF" : 0
+    },
+    "\/tmpl\/section-bgburst.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/section-bgburst.php",
+      "oF" : 0
+    },
+    "\/tmpl\/section-bgwtext.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/section-bgwtext.php",
+      "oF" : 0
+    },
+    "\/tmpl\/section-cta.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/section-cta.php",
+      "oF" : 0
+    },
+    "\/tmpl\/section-faq.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/section-faq.php",
+      "oF" : 0
+    },
+    "\/tmpl\/section-himghtext.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/section-himghtext.php",
+      "oF" : 0
+    },
+    "\/tmpl\/section-sourcebar.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/section-sourcebar.php",
       "oF" : 0
     },
     "\/tmpl\/section-twotext.php" : {

@@ -30,10 +30,30 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
+//register blocks
+add_action('acf/init', 'fs_acf_init_block_types');
+function fs_acf_init_block_types() {
+    // Check function exists.
+       if( function_exists('acf_register_block_type') ) {
 
-// // REMOVE EDITOR
-// add_action( 'init', function() {
-//   remove_post_type_support( 'page', 'editor' );
-// }, 99);
+
+//sources with cite
+   acf_register_block_type(array(
+       'name'              => 'sources',
+       'title'             => __('Sources Cite - ACF'),
+       'description'       => __('Sources Cite'),
+       'category'          => 'formatting',
+       'icon'              => 'yes-alt',
+       'keywords'          => array( 'cite','sources' ,'acf','layout' ),
+       'render_template'   => 'tmpl/cite-block.php',
+       'mode'              => 'edit',
+       'enqueue_script'    => get_template_directory_uri() . '/assets/blocks.js'
+   ));
+
+
+
+    }// Check function exists.
+}
+
 
 ?>

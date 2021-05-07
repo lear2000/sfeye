@@ -9,6 +9,9 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 394px;
+	@media screen and (max-width: 767px) {
+	  padding:1em;
+	}
 	blockquote {
 		p {
 			font-style: italic;

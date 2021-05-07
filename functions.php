@@ -6,7 +6,7 @@
 // include 'inc/acfsrcset.php';
 // include 'inc/speedup.php';
 include 'inc/acf-functions.php';
-
+include 'inc/shortcode-sources.php';
 
 
 //prev next classes
