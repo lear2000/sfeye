@@ -22,4 +22,21 @@ $('.close-nav').click(function(event) {
 				$(this).next('.sub-menu').toggleClass('is-active');
 			});
 
+
+//blog cats
+$('.catsel').click(function(event) {
+		event.preventDefault();
+		$('.arcats').removeClass('is-active');
+	  $(this).find('.fscats').toggleClass('is-active');
+		$(this).toggleClass('is-active');
 });
+$('.arcsel').click(function(event) {
+		event.preventDefault();
+		$('.catcat').removeClass('is-active');
+	  $(this).find('.fscats').toggleClass('is-active');
+		$(this).toggleClass('is-active');
+});
+
+
+});
+

@@ -565,6 +565,16 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/images\/back-icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/back-icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/blank.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -580,6 +590,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/images\/close-nav.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/down-arrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/down-arrow.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
