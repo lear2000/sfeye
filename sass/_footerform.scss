@@ -1,7 +1,7 @@
 .fform {
 	background-color: #F5F5F5;
 	@media screen and (min-width: 1024px) {
-			  padding-bottom: 180px
+			  padding-bottom: 4em
 	}
 }
 .logowrap {
@@ -92,7 +92,7 @@
 		    z-index: 2;
 		    margin-top: -40vh;
 		    margin-bottom: 0;
-		    padding-bottom: 7em;
+		    padding-bottom: 4em;
 		    @media screen and (max-width:1023px) {
 		    	margin-top: 0;
 		    	padding-bottom: 0;

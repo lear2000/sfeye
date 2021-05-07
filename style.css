@@ -1433,7 +1433,7 @@ nav.prevnext .btn {
 }
 @media screen and (min-width: 1024px) {
   .fform {
-    padding-bottom: 180px;
+    padding-bottom: 4em;
   }
 }
 
@@ -1543,7 +1543,7 @@ nav.prevnext .btn {
   z-index: 2;
   margin-top: -40vh;
   margin-bottom: 0;
-  padding-bottom: 7em;
+  padding-bottom: 4em;
 }
 @media screen and (max-width: 1023px) {
   .is-footer-form.formbox {

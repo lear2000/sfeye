@@ -25,6 +25,14 @@
       "oAP" : "\/404.php",
       "oF" : 0
     },
+    "\/acf-json\/group_60957f3737b53.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_60957f3737b53-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_60931119b4383.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -1062,6 +1070,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/sass\/_sectiontwotext.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_sectiontwotext.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/sass\/_styleguide.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1183,6 +1205,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/tmpl\/quote-background.php",
+      "oF" : 0
+    },
+    "\/tmpl\/section-twotext.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/tmpl\/section-twotext.php",
       "oF" : 0
     }
   },
