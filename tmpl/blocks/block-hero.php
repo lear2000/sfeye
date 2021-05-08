@@ -2,7 +2,11 @@
 	note: will need to add responsive images for backgrounds
  -->
 
-<section class="block-hero has-background" style="background-image:url(<?php echo get_template_directory_uri(  );?>/images/hero-1-mobile.jpg);">
+ <!-- <img class="lazyload" data-src="<?php echo get_template_directory_uri(  );?>/images/hero-1-mobile.jpg" alt=""> -->
+<section class="block-hero has-background lazyload" role="img"
+data-bg="<?php echo get_template_directory_uri();?>/images/hero-1-mobile.jpg" 
+data-bgset="<?php echo get_template_directory_uri();?>/images/hero-1-mobile.jpg [(max-width: 766px)] | <?php echo get_template_directory_uri();?>/images/hero-1.jpg [(min-width: 767px)]"
+>
 	<div class="layout-container">
 		<div class="block-hero__content color-white text-center text-left--m">
 

@@ -1,0 +1,67 @@
+@use "../variables" as *;
+
+.block-in-media{
+	padding-top: 75px;
+	padding-bottom: 75px;
+
+	&__heading{
+	
+		.is-heading{
+			font-size: 28px;
+			font-weight: 600;
+			span{
+				font-weight: 100;
+			}
+		}
+	}
+
+	&__image{
+		margin: 0px 15px;
+		max-width: 225px;
+
+		&-image{
+			margin-bottom: 20px;
+		}
+
+		img{
+			max-width: 100%;
+			height: auto;
+			margin: 0 auto;
+		}
+	}
+
+	&__btn{
+		margin-top: 25px;
+		.btn{
+			padding-left:30px;
+			padding-right: 30px;
+		}
+	}
+
+}
+
+
+//start @ tablet
+@media only screen and (min-width: 768px) {
+	
+	.block-in-media{
+		padding-top: 135px;
+		padding-bottom: 140px;
+
+		&__images{
+			margin-top: 50px;
+			display: flex;
+			justify-content: center;	
+		}
+
+		&__image{
+			margin: 0px 20px;
+			max-width: 100%;
+
+			&-text{
+				max-width: 400px;
+			}
+		}
+
+	}
+}

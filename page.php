@@ -21,6 +21,11 @@
 	<?php get_template_part( 'tmpl/blocks/block' , '1-2-ilux' ); ?>
 
 	<?php get_template_part( 'tmpl/blocks/block' , '1-2-crosslink' ); ?>
+
+	<?php get_template_part( 'tmpl/blocks/block' , 'physicians' ); ?>
+
+	<?php get_template_part( 'tmpl/blocks/block' , 'in-media' ); ?>
+
 	<!--  -->
 
 	<?php endwhile; ?>

@@ -3,7 +3,10 @@
 		<div class="layout-container">
 			<div class="block-1-2__container">
 				<div class="block-1-2__image">
-					<span class="has-background"></span>
+					<span class="has-background lazyload"
+						data-bg="<?php echo get_template_directory_uri();?>/images/temp-image-1-mobile.jpg" 
+						data-bgset="<?php echo get_template_directory_uri();?>/images/temp-image-1-mobile.jpg [(max-width: 766px)] | <?php echo get_template_directory_uri();?>/images/temp-image-1-desktop.jpg [(min-width: 767px)]"
+					></span>
 				</div>
 				<div class="block-1-2__contents">
 					<div class="block-1-2__contents-heading-top">

@@ -1,1 +1,10 @@
 @use "../variables" as *;
+
+
+@media only screen and (min-width: 768px) {
+	
+	.block-1-2-cataract{
+		margin-bottom: 0;
+	}
+	
+}

@@ -33,6 +33,11 @@
 		}
 	}
 
+	.has-background{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 	&__image{
 
 		span{
@@ -121,6 +126,7 @@
 
 		&__contents-buttons{
 			display: flex;
+			flex-wrap: wrap;
 
 			.btn{
 				border: 0;
@@ -173,7 +179,7 @@
 
 // section specific (home)
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 
 	.block-1-2{
 		

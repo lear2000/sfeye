@@ -556,7 +556,7 @@ ul.custom-list-bullet {
   padding: 15px 20px;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .block-hero {
     display: block;
     padding-left: 20px;
@@ -657,7 +657,7 @@ ul.custom-list-bullet {
   margin-right: 25px;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .block-surgery-types {
     padding-left: 20px;
     padding-right: 20px;
@@ -722,6 +722,10 @@ ul.custom-list-bullet {
 }
 .block-1-2__contents-heading .is-heading span {
   font-weight: normal;
+}
+.block-1-2 .has-background {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .block-1-2__image span {
   display: block;
@@ -791,6 +795,8 @@ ul.custom-list-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .block-1-2__contents-buttons .btn {
     border: 0;
@@ -823,7 +829,7 @@ ul.custom-list-bullet {
     margin-right: 100px;
   }
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .block-1-2.block-1-2-vision {
     background-image: url("images/logo-watermark.png");
     background-position: center;
@@ -833,6 +839,187 @@ ul.custom-list-bullet {
     margin-top: 140px;
     -webkit-box-shadow: 0px 10px 30px -25px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 30px -25px rgba(0, 0, 0, 0.2);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .block-1-2-cataract {
+    margin-bottom: 0;
+  }
+}
+.block-physcicians {
+  padding-top: 45px;
+  background-image: url("images/doctors-texture.png");
+  background-repeat: no-repeat;
+  background-position: center -12%;
+}
+.block-physcicians__heading .is-heading {
+  font-size: 28px;
+}
+.block-physcicians__heading .is-heading span {
+  display: block;
+  font-weight: 400;
+}
+.block-physcicians .has-arrows {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.block-physcicians .has-arrows button {
+  margin: 0px 10px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.block-physcicians__head-shots-wrapper {
+  position: relative;
+}
+.block-physcicians__head-shot {
+  margin: 0px 10px;
+}
+.block-physcicians__head-shot.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.block-physcicians__head-shot.slick-slide:not(.slick-active) img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+.block-physcicians__text-items-wrapper {
+  padding: 30px 20px 0px;
+}
+.block-physcicians__text-items-wrapper .is-heading {
+  font-size: 22px;
+  font-weight: 100;
+}
+.block-physcicians__text-item-btn {
+  margin-top: 20px;
+}
+.block-physcicians__text-item-btn a {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .block-physcicians {
+    padding-top: 210px;
+    padding-bottom: 200px;
+    background-image: url(images/doctor-texture-2.png);
+    background-size: 150%;
+    background-position: center top;
+  }
+  .block-physcicians .layout-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .block-physcicians__heading .is-heading {
+    font-size: 33px;
+    margin-bottom: 100px;
+  }
+  .block-physcicians__heading .is-heading span {
+    display: inline;
+  }
+  .block-physcicians__heading .is-heading span:before {
+    content: " | ";
+  }
+  .block-physcicians .has-arrows {
+    margin: 0;
+  }
+  .block-physcicians .has-arrows .slide-left,
+.block-physcicians .has-arrows .slide-right {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .block-physcicians .has-arrows .slide-left {
+    left: -50px;
+  }
+  .block-physcicians .has-arrows .slide-right {
+    right: -50px;
+  }
+  .block-physcicians__head-shot {
+    margin: 0;
+    padding: 15px;
+  }
+  .block-physcicians__head-shot.slick-slide:not(.slick-active) img {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .block-physcicians__head-shot.slick-current {
+    background: #007FCD;
+  }
+  .block-physcicians__head-shot.slick-current img {
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+  }
+  .block-physcicians__text-items-wrapper {
+    padding: 60px 0px 0px;
+  }
+  .block-physcicians__text-items-wrapper .is-heading {
+    font-size: 29px;
+  }
+  .block-physcicians__text-item-btn {
+    margin-top: 30px;
+  }
+  .block-physcicians__text-item-btn a {
+    display: inline-block;
+  }
+  .block-physcicians__text-item-btn a + a {
+    margin-left: 20px;
+  }
+}
+.block-in-media {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.block-in-media__heading .is-heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+.block-in-media__heading .is-heading span {
+  font-weight: 100;
+}
+.block-in-media__image {
+  margin: 0px 15px;
+  max-width: 225px;
+}
+.block-in-media__image-image {
+  margin-bottom: 20px;
+}
+.block-in-media__image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.block-in-media__btn {
+  margin-top: 25px;
+}
+.block-in-media__btn .btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .block-in-media {
+    padding-top: 135px;
+    padding-bottom: 140px;
+  }
+  .block-in-media__images {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block-in-media__image {
+    margin: 0px 20px;
+    max-width: 100%;
+  }
+  .block-in-media__image-text {
+    max-width: 400px;
   }
 }
 /*
