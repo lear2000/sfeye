@@ -587,6 +587,9 @@ ul.custom-list-bullet {
   padding-top: 80px;
   padding-bottom: 100px;
   overflow: hidden;
+  background-image: url(images/dots-texture-1.png);
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 .block-surgery-types__items .slick-list {
   overflow: visible;
@@ -597,6 +600,7 @@ ul.custom-list-bullet {
   padding-right: 20px;
   padding-bottom: 40px;
   position: relative;
+  background-color: #FFFFFF;
 }
 .block-surgery-types__item-inner.bottom-artifact:after {
   content: "";
@@ -681,9 +685,18 @@ ul.custom-list-bullet {
   }
 }
 @media only screen and (min-width: 1150px) {
+  .block-surgery-types {
+    padding-top: 100px;
+    background-image: url(images/dots-texture-2.png);
+    background-position: center -179px;
+    background-size: auto;
+  }
   .block-surgery-types__item-inner {
     padding-left: 25px;
     padding-right: 25px;
+    -webkit-box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 15px 25px -10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 65px;
   }
   .block-surgery-types__items {
     -webkit-box-pack: justify;
