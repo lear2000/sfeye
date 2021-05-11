@@ -11,8 +11,8 @@ $navhover:#016AAA;
 	max-width: 100%;
 	display: flex;
 	align-items: center;
-	padding-right: 2em;
-	padding-left: 2em;
+	padding-right: 2vw;
+	padding-left: 2vw;
 }
 .navleft {
 	display: flex;
@@ -32,16 +32,19 @@ $navhover:#016AAA;
 .navright {
 		margin-left: auto;
 		 a {
+		 	min-width: 30px;
+		 	display: inline-block;
+		 	text-align: center;
 		 	span {
 		 		display: none;
 		 	}
 		 }
 		 .location {
-		 	padding-right: 1em;
+		 	margin-right: .5em;
 		 }
 		 .tel {
 		 	img {
-		 		padding-right: 1em;
+		 		margin-right: 1em;
 		 	}
 		 	color: #fff;
 		 	font-size: 1em;

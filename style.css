@@ -256,8 +256,8 @@ ul.bullet li::before {
     display: flex;
     -webkit-align-items: center;
             align-items: center;
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: 2vw;
+    padding-left: 2vw;
   }
 
   .navleft {
@@ -286,11 +286,16 @@ ul.bullet li::before {
   .navright {
     margin-left: auto;
   }
+  .navright a {
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+  }
   .navright a span {
     display: none;
   }
   .navright .location {
-    padding-right: 1em;
+    margin-right: 0.5em;
   }
   .navright .tel {
     color: #fff;
@@ -298,7 +303,7 @@ ul.bullet li::before {
     font-weight: 600;
   }
   .navright .tel img {
-    padding-right: 1em;
+    margin-right: 1em;
   }
 
   nav ul {
