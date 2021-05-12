@@ -1,0 +1,198 @@
+@use "../variables" as *;
+
+.block-1-2{
+
+	&__contents{
+		padding: 45px 25px 0px;
+	}
+
+	&__contents-heading-top{
+		max-width: 545px;
+
+		.is-heading{
+			font-size: 15px;
+			color: $brand;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #E1E5EA;
+		}
+	}
+
+	
+	&__contents-heading{
+
+		.is-heading{
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 1.5;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			
+			span{
+				font-weight: normal;
+			}
+		}
+	}
+
+	.has-background{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__image{
+
+		span{
+			display: block;
+			padding-top: calc( 253 / 376 * 100%);
+			background-color: #efefef;
+		}
+	}
+
+	&__contents-buttons{
+		margin-top: 25px;
+		
+		.btn{
+			display: block;
+			font-weight: 600;
+		}
+	}
+
+
+	&-blue{
+		background-color: $brand;
+		color: $white;
+
+		.block-1-2__contents-heading-top{
+			
+			.is-heading{
+				color: $white;
+			}
+		}
+
+		.block-1-2__contents-text{
+			color: $white;
+			p{
+				color: inherit;
+			}
+		}
+	}
+
+}
+
+
+// starts at table
+@media only screen and (min-width: 767px) {
+
+	.block-1-2{
+		margin-bottom: 130px;
+		padding-top: 80px;
+		padding-bottom: 140px;
+
+		&__container{
+			display: flex;
+		}
+
+		&__contents-heading{
+
+			.is-heading{
+				font-size: 32px;
+
+				span:not(.inline--m){
+					display: block;
+				}
+			}
+		}
+
+		&__image{
+			width: 40%;
+			max-width: 490px;
+			flex-basis: 490px;
+			margin-top: -150px;
+
+			span{
+				display: block;
+				padding-top: calc( 688 / 492 * 100%);
+				background-color: #efefef;
+
+				box-shadow: 0px 0px 20px -5px rgb(0 0 0 / 15%);
+			}
+		}
+
+		&__contents{
+			width: 60%;
+			max-width: 768px;
+			flex-basis: 768px;
+			margin-left: 20px;
+		}
+
+		&__contents-buttons{
+			display: flex;
+			flex-wrap: wrap;
+
+			.btn{
+				border: 0;
+			}
+
+			.btn + .btn{
+				margin-left: 20px;
+			}
+		}	
+
+		&-reverse{
+
+			.block-1-2__contents{
+				order: 1;
+				margin-left: 0;
+				margin-right: 20px;
+			}
+
+			
+			.block-1-2__image{
+				order: 2;
+				margin-left: auto;
+				
+				span{
+					padding-top: calc( 629 / 491.5 * 100%);
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (min-width: 960px) {
+
+	.block-1-2{
+
+		&__contents{
+			margin-left: 100px;
+		}
+
+		&-reverse{
+
+			.block-1-2__contents{
+				margin-right: 100px;
+			}
+		}
+	}
+}
+
+
+// section specific (home)
+
+@media only screen and (min-width: 768px) {
+
+	.block-1-2{
+		
+		&.block-1-2-vision{
+			background-image: url("images/logo-watermark.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border: 1px solid #F5F5F5;
+			margin-top: 140px;
+
+			box-shadow: 0px 10px 30px -25px rgb(0 0 0 / 20%);
+
+		}
+	}
+}

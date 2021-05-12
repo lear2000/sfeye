@@ -4,9 +4,27 @@ Description: A custom theme built by the FS.
 Author: FS
 Version: 1.0
 */
+
 @use '_reset';
-@use '_varibles';
+@use '_variables';
 @use '_styleguide';
+@use '_helpers';
+// @use '_quotebg';
+
+
+// plugins
+
+@use "plugins/_slick";
+
+// Components
+
+@use 'blocks/_block-hero';
+@use 'blocks/_block-surgery-types';
+@use 'blocks/_block-1-2';
+@use 'blocks/_block-1-2-home';
+@use 'blocks/_block-physcicians';
+@use 'blocks/_block-in-media';
+
 @use '_nav';
 @use '_headerbg';
 @use '_formbase';
@@ -24,3 +42,4 @@ Version: 1.0
 @use '_sectionfaq';
 @use '_sources';
 @use '_cta';
+

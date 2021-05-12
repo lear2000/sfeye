@@ -1,0 +1,157 @@
+@use "variables" as *;
+
+// display
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+.show-flex{
+	display: flex;
+}
+
+@media only screen and (min-width: 767px) {
+
+	.hide--m{
+		display: none;
+	}
+
+	.show--m{
+		display: block;
+	}
+
+	.show-flex--m{
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	
+	.hide--l{
+		display: none;
+	}
+
+	.show--l{
+		display: block;
+	}
+
+	.show-flex--l{
+		display: flex;
+	}
+}
+
+
+// alignment + text
+
+.text-center{
+	text-align: center;
+} 
+
+.text-left{
+	text-align: left;
+} 
+
+.text-right{
+	text-align: right;
+} 
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.font-semibold{
+	font-weight: 500;
+}
+
+body .mb-none{
+	margin-bottom: 0;
+}
+
+body .mt-none{
+	margin-top: 0;
+}
+
+body .pb-none{
+	padding-bottom: 0;
+}
+
+body .pt-none{
+	padding-top: 0;
+}
+
+@media only screen and (min-width: 767px) {
+
+	.text-left--m{
+		text-align: left;
+	}
+
+	.text-right--m{
+		text-align: right;
+	}
+
+	.text-center--m{
+		text-align: center;
+	}
+
+}
+
+@media only screen and (min-width: 960px) {
+
+	.text-left--l{
+		text-align: left;
+	}
+
+	.text-right--l{
+		text-align: right;
+	}
+
+	.text-center--l{
+		text-align: center;
+	}
+
+}
+
+
+
+// layout
+
+.layout-container{
+	max-width: $max-width-container;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 767px) {
+
+	.layout-container--m{
+		max-width: $max-width-container;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+
+	.layout-container--l{
+		max-width: $max-width-container;
+		margin: 0 auto;
+	}
+}
+
+
+
+// colors
+
+.color-white{
+	color: $base;
+}
+
+
+// ul/ol lists
+
+ul.custom-list-bullet{
+	list-style-image: url("images/bullet.png");
+	margin: 0;
+}

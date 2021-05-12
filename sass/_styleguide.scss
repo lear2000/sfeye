@@ -1,5 +1,5 @@
 @use '_mixins' as mixin;
-@use '_varibles' as *;
+@use '_variables' as *;
 $hmarge: 16px;
 $pmarge: 1em;
 body {
@@ -117,8 +117,10 @@ h3 {
 	line-height: 1.25;
 	margin-bottom: $hmarge;
 	@media screen and (max-width: 767px) {
-	  font-size: 18px;
-	}
+		  font-size: 18px;
+		}
+
+
 }
 
 main {
@@ -159,4 +161,3 @@ ul.bullet {
 		}
 	}
 }
-

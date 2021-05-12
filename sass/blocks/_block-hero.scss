@@ -1,0 +1,87 @@
+@use "../variables" as *;
+
+.block-hero{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__content{
+		padding-top: 130px;
+		padding-bottom: 75px;
+	}
+
+	.is-heading{
+		font-size: 23px;
+		line-height: 1.5;
+
+		span{
+			display: block;
+			font-weight: $fwreg;
+		}
+	}
+
+	&__text{
+		padding-left: 40px;
+		padding-right: 40px;
+		font-style: italic;
+
+		* {
+			color: $base;
+			font-size: 14px;;
+		}
+	}
+	 
+
+	&-btn{
+		font-size: 13px;
+		line-height: normal;
+		margin-top: 45px;
+
+		.btn{
+			border: none;
+			font-weight: $fwsemi;
+			padding:15px 20px;
+		}
+	}
+}
+
+// starts at table
+@media only screen and (min-width: 768px) {
+
+	.block-hero{
+		display: block;
+		padding-left: 20px;
+		padding-right: 20px;
+
+		&__logo{
+			margin-bottom: 50px;
+		}
+
+		.is-heading{
+			font-size: 33px;
+			span{
+				display: inline;
+			}
+		}
+
+		&__content{
+			
+			max-width: 780px;
+			padding-top: 275px;
+			padding-bottom: 375px;
+		}
+
+		&__text{
+			
+			padding: 0;
+
+			*{
+				font-size: 18px;
+			}
+			
+			
+		}
+
+	}
+
+}
