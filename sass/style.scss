@@ -9,7 +9,7 @@ Version: 1.0
 @use '_variables';
 @use '_styleguide';
 @use '_helpers';
-@use '_quotebg';
+// @use '_quotebg';
 
 
 // plugins
@@ -24,3 +24,22 @@ Version: 1.0
 @use 'blocks/_block-1-2-home';
 @use 'blocks/_block-physcicians';
 @use 'blocks/_block-in-media';
+
+@use '_nav';
+@use '_headerbg';
+@use '_formbase';
+@use '_formbox';
+@use '_mapbox';
+@use '_quotebg';
+@use '_footer';
+@use '_blog';
+@use '_footerform';
+
+@use '_sectiontwotext';
+@use '_bgwtext';
+@use '_bgburst';
+@use '_himghtxt';
+@use '_sectionfaq';
+@use '_sources';
+@use '_cta';
+

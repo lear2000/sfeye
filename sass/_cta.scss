@@ -1,0 +1,48 @@
+@use '_varibles' as *;
+.cta {
+	.bgimg {
+		background-image: url(images/cta.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 450px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-top: 4vh;
+		padding-bottom: 4vh;
+		@media screen and (max-width: 767px) {
+		  background-position: right;
+		}
+	}
+
+	.container {
+		display: flex;
+		@media screen and (max-width: 980px) {
+			flex-wrap: wrap;
+		}
+	}
+	.col {
+		flex:1 0 50%;
+		&:first-of-type {
+			padding:0 4em;
+			@media screen and (max-width: 980px) {
+				padding:0 1em;
+				margin-bottom: 1em;
+			}
+		}
+	}
+	.tc {
+		display: block;
+		text-align: center;
+	}
+	h3 {
+		color: #fff;
+		text-align: center;
+	}
+	p {
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+}

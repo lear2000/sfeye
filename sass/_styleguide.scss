@@ -8,6 +8,9 @@ body {
 	color: $text;
 	line-height: $pline-height;
 	font-family: $nunito;
+	&.is-hidden {
+		overflow: hidden;
+	}
 }
 
 p {
@@ -93,6 +96,9 @@ h1 {
 	font-size: 50px;
 	line-height: 1.25;
 	margin-bottom: $hmarge;
+	@media screen and (max-width: 767px) {
+	  font-size: 40px;
+	}
 }
 h2 {
 	font-weight: $fwsemi;
@@ -100,6 +106,9 @@ h2 {
 	line-height: 1;
 	line-height: 1.25;
 	margin-bottom: $hmarge;
+	@media screen and (max-width: 767px) {
+	  font-size: 23px;
+	}
 }
 h3 {
 	font-weight: $fwsemi;
@@ -107,4 +116,48 @@ h3 {
 	line-height: 1;
 	line-height: 1.25;
 	margin-bottom: $hmarge;
+	@media screen and (max-width: 767px) {
+		  font-size: 18px;
+		}
+
+
+}
+
+main {
+	&.secondary-bg {
+		background-color: #F5F5F5;
+	}
+}
+
+
+main .container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1366px;
+	padding: 0 4vw;
+}
+p strong {
+	font-weight: $fwsemi;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+ul.bullet {
+	li {
+		list-style: none;
+		list-style-image: url(images/eye-bullet.svg);
+		&::before {
+			// content:"";
+			width: 8px;
+			height: 8px;
+			background-image: url(images/eye-bullet.svg);
+			background-size: contain;
+			display: inline-block;
+			margin-right: 1em;
+			vertical-align: middle;
+
+		}
+	}
 }

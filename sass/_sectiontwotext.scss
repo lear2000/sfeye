@@ -1,0 +1,22 @@
+@use '_varibles' as *;
+.twotext {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 4em;
+	@media screen and (max-width: 767px) {
+	  display: block;
+	}
+
+	}
+		h2 {
+		border-top: 1px solid #E1E5EA;
+		padding-top: .5em;
+	}
+	iframe {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+}

@@ -1,3 +1,6 @@
+@mixin boxshadow(){
+  box-shadow: 0 13px 26px   rgba(0, 0, 0, .2);
+}
 @function puc($val, $font-size) {
   @return ( $val * $font-size) / 1000  * 1px;
 }

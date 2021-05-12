@@ -1,0 +1,25 @@
+@use '_mixins' as mixin;
+@use '_varibles' as *;
+
+.bgburst {
+	.bgimg {
+		background-image: url(images/logo-watermark.svg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 450px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-top: 4vh;
+		padding-bottom: 4vh;
+	}
+
+	h2 {
+		border-top: 1px solid #E1E5EA;
+		padding-top: .5em;
+	}
+	img {
+		max-width: 100%;
+	}
+}

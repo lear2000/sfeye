@@ -1,0 +1,47 @@
+@use '_varibles' as *;
+.sources-cite {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	@media screen and (max-width: 767px) {
+	  padding-top: 1em;
+	  padding-bottom: 1em;
+	}
+
+	p {
+		font-size: 13px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	.container {
+		background-color: #F9F9F9;
+		border:1px solid #F9F9F9;
+		padding-top: 1.3em;
+		padding-bottom: 1.3em;
+
+	}
+	.single-sources span {
+		display: flex;
+		width: 100%;
+		color:$brand;
+		text-decoration: underline;
+		img {
+			margin-right: .5em;
+		}
+	}
+}
+
+#sources {
+  transition: height .3s ease-in-out;
+  overflow: hidden;
+  margin-left: 2em;
+  padding-top: 1em;
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+}
+
+#sources:not(.active) {
+  display: none;
+  transition: all .3s ease-in-out;
+}
