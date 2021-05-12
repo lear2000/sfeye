@@ -1,0 +1,46 @@
+@use '_mixins' as mixin;
+@use '_varibles' as *;
+.faq {
+	.bgimg {
+		background-image: url(images/faq-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 450px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-top: 6vh;
+		padding-bottom: 6vh;
+	}
+	.container {
+		& > * {
+			color: #fff;
+		}
+		@media screen and (min-width: 1024px) {
+				  h2 {
+				  	text-align: center;
+				  	margin-bottom: 2em;
+				  }
+				  .faqw {
+				  	display: grid;
+				  	grid-template-columns: 1fr 1fr;
+				  	grid-gap: 3em;
+				  	.sfaq {
+
+				  	}
+				  }
+		}
+		h3 {
+			border-top: 1px solid #E1E5EA;
+			padding-top: 1em;
+			@media screen and (max-width: 767px) {
+			  margin-top: 2em;
+			}
+		}
+		p {
+			color: #fff;
+			font-size: 16px;
+		}
+	}
+}

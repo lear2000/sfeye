@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title><?php wp_title(); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,3 +16,6 @@
 
 </head>
 <body <?php body_class(); ?> >
+
+	<?php get_template_part( 'tmpl/header', 'nav' ); ?>
+	<?php get_template_part( 'tmpl/header', 'withbg' ); ?>

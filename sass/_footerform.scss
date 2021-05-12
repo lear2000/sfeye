@@ -1,0 +1,142 @@
+.fform {
+	background-color: #F5F5F5;
+	@media screen and (min-width: 1024px) {
+			  padding-bottom: 4em
+	}
+}
+.logowrap {
+	text-align: center;
+	margin-bottom: 2em;
+}
+.ffbg {
+	background-image: url(images/contact-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color:#fff;
+	min-height: 835px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 1;
+	@media screen and (max-width: 980px) {
+		min-height: 516px;
+	}
+	.ffcnt {
+		max-width: 1366px;
+		margin: 0 auto;
+		padding-left: 4vw;
+		padding-right: 4vw;
+		@media screen and (max-width: 767px) {
+		  font-size: 16px;
+		}
+	}
+	h2 {
+		text-align: center;
+		color:#fff;
+	}
+	p {
+		text-align: center;
+		color: #fff;
+	}
+}
+.is-footer-form {
+
+	.mlogo {
+		display: none;
+		@media screen and (max-width: 980px) {
+		  display: inline-block;
+		}
+	}
+	.dlogo {
+		display: inline-block;
+		@media screen and (max-width: 980px) {
+		  display: none;
+		}
+	}
+	.container {
+		padding-top: 0;
+		max-width: 1366px;
+		margin: 0 auto;
+		padding-left: 4vw;
+		padding-right: 4vw;
+		@media screen and (max-width: 980px) {
+			padding:0;
+			background-color: #F5F5F5;
+			display: none;
+		}
+	}
+	.ffbtw{
+		text-align: center;
+		@media screen and (max-width: 980px) {
+			position: relative;
+			top: -2em;
+		}
+	}
+	.ffbtn {
+		display: none;
+		@media screen and (max-width:1023px) {
+			display: inline-block;
+			min-width: initial;
+			width: 100%;
+			max-width: 50vw;
+			padding-top: 2em;
+			padding-bottom: 2em;
+		  margin-bottom: 0;
+		}
+	}
+	&.formbox {
+		    position: relative;
+		    z-index: 2;
+		    margin-top: -40vh;
+		    margin-bottom: 0;
+		    padding-bottom: 4em;
+		    @media screen and (max-width:1023px) {
+		    	margin-top: 0;
+		    	padding-bottom: 0;
+
+		    }
+
+		}
+		@media screen and (max-width: 1023px) {
+			.formwrap {
+				padding-top: 0;
+				background-color: #F5F5F5;
+				box-shadow: none;
+				padding:1em 0;
+				h2 {
+					display: none;
+				}
+			}
+			form {
+				display: none;
+			}
+		}
+}
+
+.map-footer-form {
+	.container {
+		max-width: 1366px;
+		margin: 0 auto;
+		padding-left: 4vw;
+		padding-right: 4vw;
+	}
+	@media screen and (max-width: 980px) {
+		.mapwrap {
+			background-color: #f5f5f5;
+			box-shadow: none;
+			justify-content: center;
+		}
+		.contactbox div {
+			padding:1em 0 2em 0;
+		}
+		.mapimg {
+			max-width: 325px;
+			min-height: 163px;
+			background-image: url(images/mobile-map-box.png);
+		}
+	}
+
+}
